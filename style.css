@@ -1,0 +1,127 @@
+.box {
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    margin: 50px auto;
+}
+
+.box1 {
+    background-color: mediumaquamarine;
+}
+
+.box2 {
+    background-color: #2B3F53;
+    /* Es la propiedad a la que le aplica la transicion*/
+    transition: all 1s; /* El tiempo que tarda en transformarse el elemento */
+}
+
+.box:hover {
+    transform: scale(3);
+}
+
+.circle0, .circle1, .circle2,
+.circle3, .circle4, .circle5 {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.circle0 {
+    background-color: mediumaquamarine;
+    transition: all 1.5s linear; /*3er valor es la funcion de tiempo de transición */
+    /* transition-timing-function: linear; */
+    /*Linear es la misma velocidad de principio a fin*/
+    /*Curva de velocidad del efecto */
+}
+.circle1 {
+    background-color: salmon;
+    /* transition-property: all;
+    transition-delay: 1.5s;
+    transition-timing-function: ease-in; */
+    transition: all 1.5s ease-in;
+
+}
+.circle2 {
+    background-color: lightblue;
+    transition: all 1.5s ease-out;
+}
+.circle3 {
+    background-color: khaki;
+    transition: all 1.5s ease-in-out;
+}
+.circle4 {
+    background-color: mediumorchid;
+    transition: all 1.5s ease;
+}
+.circle5 {
+    background-color: thistle;
+    transition: all 1.5s linear;
+}
+
+.container-circle:hover .circle0,
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+    transform: translateX(200px);
+}
+
+.square1, .square2 {
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    width: 150px;
+}
+
+.square1 {
+    background-color: teal;
+}
+
+.square2 {
+    background-color: steelblue;
+    transition: all 0.8s;
+}
+
+.square2:hover {
+    transform: translate(20px, 20px);
+}
+
+.skew {
+    background-color: khaki;
+    height: 150px;
+    width: 100px;
+    transition: all 1s;
+}
+
+.skew:hover {
+    transform: skewX(-20deg);
+}
+
+
+.combinando {
+    background-color: salmon;
+    height: 75px;
+    width: 75px;
+    transition: all 1s;
+    margin: 50px auto;
+}
+
+.combinando:hover {
+    transform: rotate(90deg) scale(2) translateX(60px);
+}
+
+.origin {
+    background-color: seagreen;
+    height: 100px;
+    width: 100px;
+    transition: all 3s;
+    transform-origin: left top;
+    margin: 50px auto;
+}
+
+.origin:hover {
+    transform: rotate(500deg);
+}
